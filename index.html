@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="generation" content="Memoria 18.1"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta charset="UTF-8">
+		<title>Campo Minado</title>
+		<link rel="stylesheet" type="text/css" href="./css/jogo.css">
+		<script type="text/javascript" src="./js/Tabuleiro.class.js"></script>
+	</head>
+	<body>
+		<audio id="click-sound">
+			<source src="./audio/click.wav" type="audio/mpeg">
+		</audio>
+		<div id="container" class="panel">	
+			
+			<div class="tile" id="n1" data-value="1"></div>
+			<div class="tile" id="n2" data-value="2"></div>
+			<div class="tile" id="n3" data-value="3"></div>
+			<div class="tile" id="n4" data-value="4"></div>
+			<div class="tile" id="n5" data-value="5"></div>
+			<div class="tile" id="n6" data-value="6"></div>
+			<div class="tile" id="n7" data-value="7"></div>
+			<div class="tile" id="n8" data-value="8"></div>
+			<div class="tile" id="n9" data-value="9"></div>
+			<div class="tile" id="n10" data-value="10"></div>
+			
+			<div class="tile" id="n11" data-value="11"></div>
+			<div class="tile" id="n12" data-value="12"></div>
+			<div class="tile" id="n13" data-value="13"></div>
+			<div class="tile" id="n14" data-value="14"></div>
+			<div class="tile" id="n15" data-value="15"></div>
+			<div class="tile" id="n16" data-value="16"></div>
+			<div class="tile" id="n17" data-value="17"></div>
+			<div class="tile" id="n18" data-value="18"></div>
+			<div class="tile" id="n19" data-value="19"></div>
+			<div class="tile" id="n20" data-value="20"></div>
+			
+			<div class="tile" id="n21" data-value="21"></div>
+			<div class="tile" id="n22" data-value="22"></div>
+			<div class="tile" id="n23" data-value="23"></div>
+			<div class="tile" id="n24" data-value="24"></div>
+			<div class="tile" id="n25" data-value="25"></div>
+			<div class="tile" id="n26" data-value="26"></div>
+			<div class="tile" id="n27" data-value="27"></div>
+			<div class="tile" id="n28" data-value="28"></div>
+			<div class="tile" id="n29" data-value="29"></div>
+			<div class="tile" id="n30" data-value="30"></div>
+			
+			<div class="tile" id="n31" data-value="31"></div>
+			<div class="tile" id="n32" data-value="32"></div>
+			<div class="tile" id="n33" data-value="33"></div>
+			<div class="tile" id="n34" data-value="34"></div>
+			<div class="tile" id="n35" data-value="35"></div>
+			<div class="tile" id="n36" data-value="36"></div>
+			<div class="tile" id="n37" data-value="37"></div>
+			<div class="tile" id="n38" data-value="38"></div>
+			<div class="tile" id="n39" data-value="39"></div>
+			<div class="tile" id="n40" data-value="40"></div>
+			
+			<div class="tile" id="n41" data-value="41"></div>
+			<div class="tile" id="n42" data-value="42"></div>
+			<div class="tile" id="n43" data-value="43"></div>
+			<div class="tile" id="n44" data-value="44"></div>
+			<div class="tile" id="n45" data-value="45"></div>
+			<div class="tile" id="n46" data-value="46"></div>
+			<div class="tile" id="n47" data-value="47"></div>
+			<div class="tile" id="n48" data-value="48"></div>
+			<div class="tile" id="n49" data-value="49"></div>
+			<div class="tile" id="n50" data-value="50"></div>
+			
+			<div class="tile" id="n51" data-value="51"></div>
+			<div class="tile" id="n52" data-value="52"></div>
+			<div class="tile" id="n53" data-value="53"></div>
+			<div class="tile" id="n54" data-value="54"></div>
+			<div class="tile" id="n55" data-value="55"></div>
+			<div class="tile" id="n56" data-value="56"></div>
+			<div class="tile" id="n57" data-value="57"></div>
+			<div class="tile" id="n58" data-value="58"></div>
+			<div class="tile" id="n59" data-value="59"></div>
+			<div class="tile" id="n60" data-value="60"></div>
+			
+			<div class="tile" id="n61" data-value="61"></div>
+			<div class="tile" id="n62" data-value="62"></div>
+			<div class="tile" id="n63" data-value="63"></div>
+			<div class="tile" id="n64" data-value="64"></div>
+			<div class="tile" id="n65" data-value="65"></div>
+			<div class="tile" id="n66" data-value="66"></div>
+			<div class="tile" id="n67" data-value="67"></div>
+			<div class="tile" id="n68" data-value="68"></div>
+			<div class="tile" id="n69" data-value="69"></div>
+			<div class="tile" id="n70" data-value="70"></div>
+			
+			<div class="tile" id="n71" data-value="71"></div>
+			<div class="tile" id="n72" data-value="72"></div>
+			<div class="tile" id="n73" data-value="73"></div>
+			<div class="tile" id="n74" data-value="74"></div>
+			<div class="tile" id="n75" data-value="75"></div>
+			<div class="tile" id="n76" data-value="76"></div>
+			<div class="tile" id="n77" data-value="77"></div>
+			<div class="tile" id="n78" data-value="78"></div>
+			<div class="tile" id="n79" data-value="79"></div>
+			<div class="tile" id="n80" data-value="80"></div>
+			
+			<div class="tile" id="n81" data-value="81"></div>
+			<div class="tile" id="n82" data-value="82"></div>
+			<div class="tile" id="n83" data-value="83"></div>
+			<div class="tile" id="n84" data-value="84"></div>
+			<div class="tile" id="n85" data-value="85"></div>
+			<div class="tile" id="n86" data-value="86"></div>
+			<div class="tile" id="n87" data-value="87"></div>
+			<div class="tile" id="n88" data-value="88"></div>
+			<div class="tile" id="n89" data-value="89"></div>
+			<div class="tile" id="n90" data-value="90"></div>
+			
+			<div class="tile" id="n91" data-value="91"></div>
+			<div class="tile" id="n92" data-value="92"></div>
+			<div class="tile" id="n93" data-value="93"></div>
+			<div class="tile" id="n94" data-value="94"></div>
+			<div class="tile" id="n95" data-value="95"></div>
+			<div class="tile" id="n96" data-value="96"></div>
+			<div class="tile" id="n97" data-value="97"></div>
+			<div class="tile" id="n98" data-value="98"></div>
+			<div class="tile" id="n99" data-value="99"></div>
+			<div class="tile" id="n100" data-value="100"></div>
+			
+			<div class="panel modal" id="startScreen"></div>
+			<div class="panel modal" id="vitoriaScreen"></div>
+			<div class="panel modal" id="derrotaScreen"></div>
+				
+		</div>
+		<script type="text/javascript" src="./js/jogo.js"></script>
+	</body>
+</html>
