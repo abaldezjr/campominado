@@ -1,0 +1,102 @@
+*{
+    margin:0;	
+    padding:0;	
+}
+
+body {
+    background-color:#005593;
+    padding:0px;
+    margin:0px;
+    text-align:center;
+}
+
+.panel{
+	width:305px;
+	height:305px;
+}
+
+.modal{
+	position:absolute;
+	transition: all 0.5s;	
+}
+
+#container{
+	background-color:white;
+	width:260px;
+	height:260px;
+	position:relative;
+	margin:150px auto;
+	border-radius:6px;
+}
+
+#startScreen{
+	background:url('../img/start.png');
+	width:260px;
+	height:260px;
+	opacity:1;
+	z-index:1;
+	border-radius:6px;
+}
+
+#vitoriaScreen{
+	background:url('../img/vitoria.png');
+	width:260px;
+	height:260px;
+	opacity:0;
+	z-index:-1;
+	border-radius:6px;
+}
+
+#derrotaScreen{
+	background:url('../img/derrota.png');
+	width:260px;
+	height:260px;
+	opacity:0;
+	z-index:-1;
+	border-radius:6px;
+}
+
+.tile{
+	position:absolute;
+	width:20px;
+	height:20px;
+	background-color:white;
+	border:outset;
+	transition:all 0.5s;
+
+}
+
+.tile:hover{
+	background-color:#fcce21;
+	cursor:pointer;
+	transition:all 0.5s;
+}
+
+.tile-aberto{
+	position:absolute;
+	width:20px;
+	height:20px;
+	background-color:#d5dcf2;
+	border:inset;
+	transition:border 0.5s,background-color 0.5s;
+	font-family:verdana;
+	font-size:18px;
+}
+
+.tile-bomba{
+	position:absolute;
+	width:20px;
+	height:20px;
+	background:url('../img/bomba20.jpg');
+	border:outset;
+	transition:all 0.5s;
+}
+
+.tile-explodida{
+	position:absolute;
+	width:20px;
+	height:20px;
+	background:url('../img/mina.png');
+	border:inset;
+	transition:all 0.5s;
+}
