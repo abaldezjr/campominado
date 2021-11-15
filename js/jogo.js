@@ -9,17 +9,18 @@ function load() {
 	placarBandeiras = document.querySelector("#n-bandeiras");
 	startScreen.addEventListener("click", startGame, false);
 
-	numeroMinas = numeroBandeiras = 20;
+	numeroMinas = 20;
 	numeroLinhas = 10;
 	numeroColunas = 10;
-
-	placarBandeiras.innerHTML = numeroBandeiras;
 
 }
 
 function inicializar() {
 
 	tab = new Tabuleiro(numeroLinhas, numeroColunas, numeroMinas);
+	
+	numeroBandeiras = 20;
+	placarBandeiras.innerHTML = numeroBandeiras;
 
 	for (let i = 0; i < numeroLinhas; i++) {
 		for (let j = 0; j < numeroColunas; j++) {
