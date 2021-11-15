@@ -90,7 +90,13 @@ function desenhaTabuleiro() {
 
 }
 
-function jogar() {
+function jogar(e) {
+	if(e.button == 0) {		
+		if (this.className == "tile-bandeira") {		
+			numeroBandeiras++;
+			placarBandeiras.innerHTML = numeroBandeiras;
+		}
+	}
 	//document.getElementById("click-sound").play();
 	tab.jogada(Number(this.dataset.linha), Number(this.dataset.coluna));
 	desenhaTabuleiro();
