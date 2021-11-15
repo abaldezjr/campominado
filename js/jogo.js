@@ -75,6 +75,10 @@ function desenhaTabuleiro() {
 			tile = tiles[i][j];
 			if (tile.className != "tile-aberto") {
 				if (tab.tabuleiro[i][j] >= 0) {
+					if(tile.className == "tile-bandeira"){
+						numeroBandeiras++;
+						placarBandeiras.innerHTML = numeroBandeiras;
+					}
 					tile.className = "tile-aberto";
 					if (tab.tabuleiro[i][j] > 0) {
 						tile.innerHTML = tab.tabuleiro[i][j];
@@ -91,12 +95,6 @@ function desenhaTabuleiro() {
 }
 
 function jogar(e) {
-	if(e.button == 0) {		
-		if (this.className == "tile-bandeira") {		
-			numeroBandeiras++;
-			placarBandeiras.innerHTML = numeroBandeiras;
-		}
-	}
 	//document.getElementById("click-sound").play();
 	tab.jogada(Number(this.dataset.linha), Number(this.dataset.coluna));
 	desenhaTabuleiro();
