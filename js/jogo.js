@@ -18,7 +18,7 @@ function load() {
 function inicializar() {
 
 	tab = new Tabuleiro(numeroLinhas, numeroColunas, numeroMinas);
-	
+
 	numeroBandeiras = 20;
 	placarBandeiras.innerHTML = numeroBandeiras;
 
@@ -41,18 +41,17 @@ function inicializar() {
 
 function mouseClicado(e) {
 	if (e.button == 2) {
-		if (numeroBandeiras > 0) {
-			if (this.className == "tile") {
+		if (this.className == "tile") {
+			if(numeroBandeiras > 0){
 				this.className = "tile-bandeira";
 				numeroBandeiras--;
 				placarBandeiras.innerHTML = numeroBandeiras;
-
-			} else {
-				if (this.className == "tile-bandeira") {
-					this.className = "tile";
-					numeroBandeiras++;
-					placarBandeiras.innerHTML = numeroBandeiras;
-				}
+			}
+		} else {
+			if (this.className == "tile-bandeira") {
+				this.className = "tile";
+				numeroBandeiras++;
+				placarBandeiras.innerHTML = numeroBandeiras;
 			}
 		}
 	}
@@ -74,7 +73,7 @@ function desenhaTabuleiro() {
 	for (let i = 0; i < numeroLinhas; i++) {
 		for (let j = 0; j < numeroColunas; j++) {
 			tile = tiles[i][j];
-			if(tile.className != "tile-aberto"){
+			if (tile.className != "tile-aberto") {
 				if (tab.tabuleiro[i][j] >= 0) {
 					tile.className = "tile-aberto";
 					if (tab.tabuleiro[i][j] > 0) {
